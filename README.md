@@ -7,5 +7,3 @@ NodeJS Library to get video duration from buffer
 | getDurationFromBuffer | Buffer | Number | Return seconds in format 66.803     |
 | fancyTimeFormat       | Number | String | Return string time in format '1:07' |
 | getVideoDuration      | Buffer | String | Return string time in format '1:07' |
-
-## Usage
