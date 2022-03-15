@@ -32,4 +32,4 @@ const getVideoDuration = (buffer) => {
   return fancyTimeFormatDuration;
 };
 
-export default { getDurationFromBuffer, fancyTimeFormat, getVideoDuration };
+module.exports = { getDurationFromBuffer, fancyTimeFormat, getVideoDuration };
