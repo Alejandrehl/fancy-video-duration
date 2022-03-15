@@ -9,7 +9,7 @@ const getVideoDuration = (buffer: Buffer) => {
 };
 
 module.exports = {
-  getVideoDuration,
   getDurationFromBuffer,
   fancyTimeFormat,
+  getVideoDuration,
 };
