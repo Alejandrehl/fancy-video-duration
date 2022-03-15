@@ -1,7 +1,7 @@
 export const fancyTimeFormat = (duration: number): string => {
   const hours = ~~(duration / 3600);
   const minutes = ~~((duration % 3600) / 60);
-  const seconds = ~~duration % 60;
+  const seconds = ~~Math.ceil(duration) % 60;
 
   let result = "";
 
