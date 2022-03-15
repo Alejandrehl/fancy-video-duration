@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/Alejandrehl/fancy-video-duration/issues"
   },
-  "homepage": "https://github.com/Alejandrehl/fancy-video-duration#readme"
+  "homepage": "https://github.com/Alejandrehl/fancy-video-duration#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  }
 }
