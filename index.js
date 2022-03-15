@@ -1,4 +1,4 @@
-const getDurationFromBuffer = (buffer: Buffer): number => {
+const getDurationFromBuffer = (buffer) => {
   const header = Buffer.from("mvhd");
   const start = buffer.indexOf(header) + 17;
   const timeScale = buffer.readUInt32BE(start);
@@ -8,7 +8,7 @@ const getDurationFromBuffer = (buffer: Buffer): number => {
   return audioLength;
 };
 
-const fancyTimeFormat = (duration: number): string => {
+const fancyTimeFormat = (duration) => {
   const hours = ~~(duration / 3600);
   const minutes = ~~((duration % 3600) / 60);
   const seconds = ~~Math.ceil(duration) % 60;
@@ -25,11 +25,11 @@ const fancyTimeFormat = (duration: number): string => {
   return result;
 };
 
-const getVideoDuration = (buffer: Buffer) => {
+const getVideoDuration = (buffer) => {
   const durationLength = getDurationFromBuffer(buffer);
   const fancyTimeFormatDuration = fancyTimeFormat(durationLength);
 
   return fancyTimeFormatDuration;
 };
 
-export { getDurationFromBuffer, fancyTimeFormat, getVideoDuration };
+export default { getDurationFromBuffer, fancyTimeFormat, getVideoDuration };

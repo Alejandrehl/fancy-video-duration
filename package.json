@@ -1,6 +1,6 @@
 {
   "name": "fancy-video-duration",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "NodeJS library to get video duration from buffer",
   "main": "index.ts",
   "type": "module",
